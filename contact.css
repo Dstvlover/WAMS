@@ -5,7 +5,7 @@ section#contact .container{
 }
 
 section#contact aside{
-    background: var(--color-primary);
+    background:rgb(204, 136, 46);
     padding: 2rem;
     font-size: 0.9rem;
     color: white;
@@ -45,6 +45,8 @@ section#contact form{
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    background:rgb(204, 136, 46);
+
 }
 section#contact form input,
 section#contact form textarea{
