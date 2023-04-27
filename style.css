@@ -34,6 +34,7 @@ body{
     color: var(--color-dark);
     background: var(--color-white);
     font-family: 'Raleway', sans-serif;
+    
 }
 
 .container{
@@ -69,7 +70,7 @@ h2{
     letter-spacing: -0.2rem;
 }
 h3{
-    font-size: 2rem
+    font-size: 2rem;
 }
 
 h4, h5{ 
@@ -112,7 +113,7 @@ p{
 }
 .btn-primary{
     background: var(--color-primary);
-    color: #ff0157;
+    color: #0a0a0c;
 }
 
 section{
@@ -187,7 +188,8 @@ header{
     max-width: 100vw;
     position: relative;
     top: 5rem;
-    display: grid;
+    display: flex;
+    position: relative;
     place-items: center;
     color: black;
     opacity: 95%;
@@ -545,7 +547,7 @@ section#header .container .info .cta a:last-child:hover img{
 }
 header .container{
     display: grid;
-    grid-template-columns: 38rem auto 17rem;
+    grid-template-columns: 40rem auto 17rem;
     align-items: center;
     max-height: 100%;
     margin-top: -3rem;
@@ -566,6 +568,8 @@ header .container .info p{
     margin: 1rem 0 2rem;
     font-weight: bolder;
     font-style: italic;
+    color: #fff;
+   
 }
 
 header .container .info .cta{
@@ -655,8 +659,11 @@ section#About-Us .container > h2{
     text-align: center;
     font-style: normal;
     font-weight: 900;
+    letter-spacing: normal;
+    font-style: normal;
+    font-weight: bolder;
    
-    color:#f82249;
+    color:rgba(204, 123, 75, 0.959);
 }
 section#About-Us .container > p{
     text-align: justify;
@@ -722,8 +729,9 @@ section#About-Us .info{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
+    color:rgba(204, 123, 75, 0.959);
    
-    color:#f82249;
+   
     
 }
 .parent {
@@ -824,6 +832,15 @@ section#partners h4{
     margin-bottom: 0.5rem;
   
 }
+section#partners .container h4{
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 1rem;
+    font-weight: bold;
+  
+}
 section#partners .clients {
     display: flex;
     align-items: center;
@@ -837,9 +854,7 @@ section#partners-1 h4{
     font-size: 1.4rem;
     text-transform: uppercase;
     font-style: normal;
-    
-   
-    color:#f82249;
+    color:rgba(204, 123, 75, 0.959);
 }
 section#partners-1 h3{
     text-align: center;
@@ -980,6 +995,7 @@ section#Publications .container a{
     display: block;
     text-align: center;
     margin-top: 1.6rem;
+    
 }
 
 
@@ -1011,7 +1027,7 @@ section#cta .container .btn{
 /* ********************************** Footer ****************** */
 
 footer{
-    background: #dba745;
+    background-color:#e7aa3a;
     margin-top: 8rem;
     padding-top: 5rem;
     font-size: 0.9rem;
@@ -1039,6 +1055,7 @@ footer .container {
 footer .container h4{
     color: var(--color-white);
     margin-bottom: 1.6rem;
+    font-size: 1.2rem;
 }
 footer .container .f1 p{
     margin: 1rem 0 -3rem;
@@ -1164,12 +1181,15 @@ button[type="submit"]:hover{
     h1{
         font-size: 4.4rem;
         letter-spacing: 1px;
-        color: black;
+        color: white;
+        font-family: Roboto;
     }
 
     h2{
         font-size: 2.7rem;
         letter-spacing: -1px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
     }
 
     h3{
@@ -1373,7 +1393,7 @@ button[type="submit"]:hover{
     h1{
         font-size: 2rem;
         padding: 1em;
-        color: rgb(0, 0, 0);
+        color: white;
         
     }
     h2{
@@ -1384,6 +1404,7 @@ button[type="submit"]:hover{
         flex-wrap: wrap;
         align-content: center;
         align-items: center;
+        color: white;
     }
     h3{
         font-size: 1.6rem;

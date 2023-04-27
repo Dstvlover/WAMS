@@ -1,0 +1,55 @@
+#About-Us .container h3{
+    justify-content: center;
+    display: flex;
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 1rem 0 2rem;
+    background-color:#F5DEB3;
+}
+section#About-Us .container p {
+    text-align: justify;
+    display: flex;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    align-content: stretch;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+}
+section#About-Us .container p {
+    text-align: justify;
+    margin-top: 1.2rem;
+    justify-content: center;
+    display: flex;
+}
+
+#About-Us .container h2 {
+    font-size: 1.5rem;
+    letter-spacing: -0.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: normal;
+}
+section#About-Us .container p {
+    text-align: justify;
+    margin-top: 1.2rem;
+    justify-content: center;
+    display: flex;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+}
+section#About-Us .container a {
+    text-align: justify;
+    margin-top: 1.2rem;
+    justify-content: center;
+    display: flex;
+    margin-top: 0.1rem;
+    margin-bottom: 0.8rem;
+
+}
+h1, h2, h3, h4, h5{
+    color: var(--color-black);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+}

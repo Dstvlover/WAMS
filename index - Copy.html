@@ -15,12 +15,14 @@
 
     <!-------------------- Stylesheet----------------->
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./speakers.css">
-
+    
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
 
     
 </head>
@@ -41,51 +43,78 @@
             <button id="close-btn"><i class="uil uil-multiply"></i></button>
 
 
+
+
         </div>
     </nav>
-    <main id="main" class="main-page">
 
-        <!--==========================
-          Speaker Details Section
-        ============================-->
-        <section id="speakers-details" class="wow fadeIn">
-            <div class="container">
-            <div class="section-header-1">
-              <h2>Speaker Details</h2>
-              <p> Guest Speaker </p>
-            </div>
-    
-            <div class="row">
-              <div class="col-md-6">
-                <img src="DR.Edem pic.jpeg" alt="Speaker 1" class="img-fluid">
-              </div>
-    
-              <div class="col-md-6">
-                <div class="details">
-                  <h2>Dr. Edem Mahu</h2>
-                  <div class="social">
-                    <li><a href="https://www.instagram.com/edemmahuofficial/?hl=en"><i class="uil uil-instagram-alt"></i></a></li>
-                    <li><a href="https://www.facebook.com/mahu.edem/"><i class="uil uil-facebook"></i></a></li>
-                    <li><a href="https://twitter.com/EdemMahu"><i class="uil uil-twitter-alt"></i></a></li>
-                    <li><a href="https://gh.linkedin.com/in/edem-mahu-2a030647"><i class="uil uil-linkedin"></i></a></li>
-                    
-                  </div>
-                  <p> Dr. Edem Mahu is a highly accomplished Principal Investigator in the Marine Biogeochemistry Lab at the University of Ghana. She is an expert in marine pollution, environmental toxicology and seafood safety , and paleoenvironmental reconstruction. Her research has contributed significantly to the scientific understanding of the impact of human activities on marine ecosystems. Dr. Mahu is also dedicated to educating the next generation of marine biogeochemists and is regarded as one of the top marine scientists in Ghana with several recognitions and awards in the field. She leads a team of researchers committed to advancing understanding of marine ecosystems and their sustainable management
-                        
-                  </p>
-                 
+    <!------------------------------ End of Navbar ------------------------------>
+
+    <header>
+        <div class="container">                                                 
+            <div class="info">
+                <h1> West African Marine Science Symposium </h1>
+                <h2>18th-20th Aug 2023</h2>
+                <h2>Accra, Ghana</h2>
+                <p>
+                 Fostering Partnerships to Advance Ocean Science in West Africa
+                </p>
+                <div class="cta">
+                    <a href="abstract.html" class="btn btn-primary">Register</a>
                 </div>
-              </div>
-              
             </div>
-            </div>
-    
-        </section>
-    
-      </main>
+        </div>
+       
+    </header>
 
-   
-      <footer>
+    <!------------------------------ End of Header ------------------------------>
+
+    <section id="About-Us">
+        <div class="container">
+            <h2>WAMSS</h2>
+            <p> West Africa Marine Science Symposium (WAMSS) will bring together marine and coastal experts, storytellers, youth, government bodies, Non-governmental organisations, funders, and National Geographic Society Explorers from and working in West Africa in order to:
+
+
+                Foster critical knowledge exchange and cross-pollinate perspectives on the challenges and opportunities in the region, sharing successes and lessons learned with practitioners across sectors as well as the broader public.
+                Engage early-career professionals and youth to inspire and equip the next generation of marine and coastal scientists, managers, and conservationists with key knowledge and skills. WAMSS plan to highlight career paths and funding opportunities, offer grant writing workshops, and forge critical connections.
+                Identify successful marine research and conservation models and catalyze collaborative projects by connecting funders with potential grant applicants. 
+                </p>
+        </div>
+
+
+    </section>
+    <!------------------------------ End of About Us ------------------------------>
+
+    <section id="partners-1">
+        <div class="container">
+            <h4>Sponsors and Partners</h4>
+            <div class="clients-1">
+        </div>
+
+    </section>
+    <section id="partners">
+        <div class="container">
+            
+            <div class="clients">   
+                
+                <div><img src="NEWF logo.png"></div>
+                <div><img src="Coessign.png"></div>
+                <div><img src="pogo logo.jfif"></div>
+                <div><img src="Univ Gh.png"></div>
+
+            </div>
+            <div>
+            <h4>This event is supported by the National Geographic Society</h4>
+            </div>    
+        </div>
+
+    </section>
+    <!------------------------------ End of Partners/Sponsors -------------------------->
+    <section id="countdown-section">
+        <h4>Countdown to Symposium</h4>
+        <div id="countdown"></div>
+    </section>
+    <footer>
         <div class="container">
             <div class="f1">
                 <div class="logo">
@@ -150,9 +179,18 @@
         </div>
     </footer>
 
-    <script src="main.js"></script>
-    <script src="wow.js"></script>
     
+    
+   
+            
+
+   
+
+   
+    
+</body>
+<script src="main.js"></script>
+
     <script>
 
   //Javascript for homepage navigation slider navigation
@@ -174,29 +212,4 @@
         });
     });
     </script>
-    <script>
-        var form = document.getElementById("my-form");
-        
-        async function handleSubmit(event) {
-          event.preventDefault();
-          var status = document.getElementById("my-form-status");
-          var data = new FormData(event.target);
-          fetch(event.target.action, {
-            method: form.method,
-            body: data,
-            headers: {
-                'Accept': 'application/json'
-            }
-          }).then(response => {
-            status.innerHTML = "Thanks for your submission!";
-            form.reset()
-          }).catch(error => {
-            status.innerHTML = "Oops! There was a problem submitting your form"
-          });
-        }
-        form.addEventListener("submit", handleSubmit)
-    </script>
-    
-</body>
 </html>
-
