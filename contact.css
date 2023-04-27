@@ -51,7 +51,7 @@ section#contact form{
 section#contact form input,
 section#contact form textarea{
     padding: 1.4rem;
-    background: var(--color-primary);
+    background:rgb(204, 136, 46);
 
 }
 section#contact form textarea{
