@@ -82,6 +82,7 @@ h2{
     margin-bottom: .5rem;
     letter-spacing: normal;
     font-weight: bold;
+    display: inline-block;
 
 }
 h3{
@@ -146,12 +147,13 @@ nav{
     place-items: center;
     position: fixed;
     z-index: 2;
-    background: white;
+    background-color: rgba(0, 0, 0, 0.1);
    
 }
 .window-scroll{
     background: var(--color-primary);
-    box-shadow: 0 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.1);
+    
 }
 
 nav button{
@@ -163,6 +165,7 @@ nav .container{
     justify-content: space-between;
     align-items: center;
     transform: transform 250ms;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 nav .container ul{
@@ -222,7 +225,7 @@ section#header-5{
     top: 5rem;
     display: grid;
     place-items: center;
-    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.1);
 
 }
 
@@ -1570,6 +1573,10 @@ button[type="submit"]:hover{
 
     section{
         padding-top: 8rem;
+    }
+    .container .info h1{
+        display: inline-block;
+    
     }
 
     /* ********************************** NAVBAR****************** */
